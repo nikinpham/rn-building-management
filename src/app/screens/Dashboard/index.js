@@ -7,7 +7,7 @@ export default class Dashboard extends React.Component {
 		return (
 			<Container>
 				<Text variant="text">Trang chủ</Text>
-			</Container>
+			</Container >
 		)
 	}
 };

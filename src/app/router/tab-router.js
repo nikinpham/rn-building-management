@@ -48,7 +48,7 @@ function Routes() {
 				<Tabs.Navigator
 					initialRouteName={ROUTES.DASHBOARD}
 					tabBar={(props) => <TabsUI {...{ tabs, ...props }} />}>
-					<Tabs.Screen name={ROUTES.NOTIFICATION} component={Notification} />
+					<Tabs.Screen name={ROUTES.NOTIFICATION} component={Notification} options={{ tabBarBadge: 3 }} />
 					<Tabs.Screen name={ROUTES.FEEDBACK} component={Feedback} />
 					<Tabs.Screen name={ROUTES.DASHBOARD} component={Dashboard} />
 					<Tabs.Screen name={ROUTES.PAYMENT} component={Payment} />
