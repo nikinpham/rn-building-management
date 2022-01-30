@@ -1,5 +1,5 @@
-export { default as ScreenA } from './a';
-export { default as ScreenB } from './b';
-export { default as ScreenC } from './c';
-export { default as ScreenD } from './d';
-export { default as ScreenE } from './e';
+export { default as Notification } from './Notification';
+export { default as Feedback } from './Feedback';
+export { default as Dashboard } from './Dashboard';
+export { default as Payment } from './Payment';
+export { default as Utils } from './Utils';

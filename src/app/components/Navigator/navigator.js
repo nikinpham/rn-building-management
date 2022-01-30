@@ -11,22 +11,22 @@ const { NAVIGATION_BOTTOM_TABS_HEIGHT } = SIZES;
 const { width: wWidth } = Dimensions.get('window');
 
 function TabsUI({ tabs }) {
-  const tabWidth = useMemo(() => wWidth / tabs.length, [tabs.length]);
+	const tabWidth = useMemo(() => wWidth / tabs.length, [tabs.length]);
 
-  return (
-    <Box
-      {...{ height: NAVIGATION_BOTTOM_TABS_HEIGHT, width: wWidth }}
-      backgroundColor="noColor">
-      <TabShape {...{ tabWidth }} />
-      <Box {...StyleSheet.absoluteFill}>
-        <TabHandler {...{ tabs, tabWidth }} />
-      </Box>
-    </Box>
-  );
+	return (
+		<Box
+			{...{ height: NAVIGATION_BOTTOM_TABS_HEIGHT, width: wWidth }}
+			backgroundColor="noColor">
+			<TabShape {...{ tabWidth }} />
+			<Box {...StyleSheet.absoluteFill}>
+				<TabHandler {...{ tabs, tabWidth }} />
+			</Box>
+		</Box>
+	);
 }
 
 TabsUI.propTypes = {
-  tabs: NAVIGATION_TAB_PROP_TYPE.isRequired,
+	tabs: NAVIGATION_TAB_PROP_TYPE.isRequired,
 };
 
 export default TabsUI;
